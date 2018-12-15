@@ -323,16 +323,7 @@ public class LogItem implements Parcelable {
             md.update(der);
             byte[] digest = md.digest();
 
-            if (Arrays.equals(digest, VpnStatus.officalkey))
-                apksign = c.getString(R.string.official_build);
-            else if (Arrays.equals(digest, VpnStatus.officaldebugkey))
-                apksign = c.getString(R.string.debug_build);
-            else if (Arrays.equals(digest, VpnStatus.amazonkey))
-                apksign = "amazon version";
-            else if (Arrays.equals(digest, VpnStatus.fdroidkey))
-                apksign = "F-Droid built and signed version";
-            else
-                apksign = c.getString(R.string.built_by, cert.getSubjectX500Principal().getName());
+            apksign = c.getString(R.string.built_by, cert.getSubjectX500Principal().getName());
 
             PackageInfo packageinfo = c.getPackageManager().getPackageInfo(c.getPackageName(), 0);
             version = packageinfo.versionName;
