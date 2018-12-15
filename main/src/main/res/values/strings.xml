@@ -259,6 +259,7 @@
     <string name="jelly_keystore_alphanumeric_bug">Some versions of Android 4.1 have problems if the name of the keystore certificate contains non alphanumeric characters (like spaces, underscores or dashes). Try to reimport the certificate without special characters</string>
     <string name="encryption_cipher">Encryption cipher</string>
     <string name="packet_auth">Packet authentication</string>
+    <string name="xor_obfuscation">XOR obfuscation</string>
     <string name="auth_dialog_title">Enter packet authentication method</string>
     <string name="built_by">built by %s</string>
     <string name="debug_build">debug build</string>

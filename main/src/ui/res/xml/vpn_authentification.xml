@@ -59,6 +59,11 @@
             android:key="auth"
             android:persistent="false"
             android:title="@string/packet_auth" />
+        <EditTextPreference
+            android:key="xor_key"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="@string/xor_obfuscation" />
     </PreferenceCategory>
 
 </PreferenceScreen>
