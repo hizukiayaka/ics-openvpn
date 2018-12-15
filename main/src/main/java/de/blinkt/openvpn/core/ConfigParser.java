@@ -539,6 +539,13 @@ public class ConfigParser {
         if (auth != null)
             np.mAuth = auth.get(1);
 
+        Vector<String> xor = getOption("xor-secret", 1, 2);
+        if (xor != null && xor.size() < 4) {
+            if (xor.size() > 1)
+                np.mXorKey = xor.get(1) + " " + xor.get(2);
+            else
+                np.mXorKey = xor.get(1);
+        }
 
         Vector<String> ca = getOption("ca", 1, 1);
         if (ca != null) {

@@ -131,6 +131,7 @@ public class VpnProfile implements Serializable, Cloneable {
     public String mConnectRetryMaxTime = "300";
     public boolean mUserEditable = true;
     public String mAuth = "";
+    public String mXorKey = "";
     public int mX509AuthType = X509_VERIFY_TLSREMOTE_RDN;
     public String mx509UsernameField = null;
     public boolean mAllowLocalLAN;
@@ -619,6 +620,9 @@ public class VpnProfile implements Serializable, Cloneable {
         if (!TextUtils.isEmpty(mAuth)) {
             cfg.append("auth ").append(mAuth).append("\n");
         }
+        if (!TextUtils.isEmpty(mXorKey)) {
+            cfg.append("xor-secret ").append(mXorKey).append("\n");
+	}
 
         // Obscure Settings dialog
         if (mUseRandomHostname)
