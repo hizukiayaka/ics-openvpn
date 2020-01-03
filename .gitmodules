@@ -1,6 +1,3 @@
-[submodule "main/openvpn"]
-	path = main/src/main/cpp/openvpn
-	url = ../../schwabe/openvpn.git
 [submodule "main/openssl"]
 	path = main/src/main/cpp/openssl
 	url = ../../schwabe/platform_external_openssl.git
