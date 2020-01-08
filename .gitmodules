@@ -13,3 +13,7 @@
 [submodule "main/src/main/cpp/lz4"]
 	path = main/src/main/cpp/lz4
 	url = ../../lz4/lz4.git
+[submodule "main/src/main/cpp/openvpn"]
+	path = main/src/main/cpp/openvpn
+	url = git@github.com:hizukiayaka/openvpn.git
+	branch = blackbat-ics

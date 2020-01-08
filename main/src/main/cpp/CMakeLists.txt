@@ -192,7 +192,6 @@ set(openvpn_srcs
         src/openvpn/ssl.c
         src/openvpn/ssl_openssl.c
         src/openvpn/ssl_mbedtls.c
-        src/openvpn/ssl_ncp.c
         src/openvpn/ssl_verify.c
         src/openvpn/ssl_verify_openssl.c
         src/openvpn/ssl_verify_mbedtls.c
@@ -202,6 +201,8 @@ set(openvpn_srcs
         src/openvpn/comp-lz4.c
         src/openvpn/comp.c
         src/openvpn/compstub.c
+        src/openvpn/xor.c
+        src/openvpn/xor_socket.c
         )
 
 PREPEND(openvpn_srcs_with_path "openvpn" ${openvpn_srcs})
